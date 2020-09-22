@@ -142,10 +142,8 @@ def winner(array)
 end
 
 def play
-  counter = 0
-  until over?(board) == true
-    turn(board)
-    counter += 1
+  until over? == true
+    turn
   end
   return winner(board)
 end
