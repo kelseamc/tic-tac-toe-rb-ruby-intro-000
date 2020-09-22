@@ -145,5 +145,10 @@ def play
   until over? == true
     turn
   end
-  return winner(board)
+  if won? == true
+    puts "Congratulations"
+    return winner
+  elsif draw? == true
+    puts "Cat's Game!"
+  end
 end
