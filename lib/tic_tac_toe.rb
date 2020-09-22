@@ -141,11 +141,10 @@ def winner(array)
   end
 end
 
-def play
+def play (board)
   until over? == true
     turn
   end
-
   if won?
     puts "Congratulations #{winner}!"
   elsif draw?
