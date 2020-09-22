@@ -146,8 +146,7 @@ def play
     turn
   end
   if won? == true
-    puts "Congratulations"
-    return winner
+    puts "Congratulations #{winner}"
   elsif draw? == true
     puts "Cat's Game!"
   end
